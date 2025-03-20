@@ -8,6 +8,8 @@ body{
 
 .container{
     margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 input[type="text"]{
@@ -30,7 +32,8 @@ button{
     color: white;
     border: 1px solid white;
     border-radius: 0px;
-
+    width:170px;
+    margin: 2px;
 }
 
 button:hover{
