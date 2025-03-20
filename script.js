@@ -53,7 +53,6 @@ function handleSearch() {
 }
 
 
-
 function MarketCap() {
     currentData = [...currentData].sort((a, b) => b.market_cap - a.market_cap);
     Table(currentData);
