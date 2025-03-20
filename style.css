@@ -16,13 +16,13 @@ input[type="text"]{
     padding: 8px;
     margin-right: 10px;
     width: 300px;
-    background-color: #000000;
-    border: 1px solid white;
+    /* background-color: #000000; */
+    /* border: 1px solid white; */
 }
 
-input::placeholder {
+/* input::placeholder {
     color: #ffffff;
-  }
+  } */
   
 
 button{

@@ -45,8 +45,8 @@ function Table(data) {
 function handleSearch() {
     const search = document.getElementById('searchInput').value.toLowerCase();
     currentData = coin.filter(coin => 
-        coin.name.toLowerCase().includes(search) ||
-        coin.symbol.toLowerCase().includes(search) ||
+        coin.name.toLowerCase().includes(search)||
+        coin.symbol.toLowerCase().includes(search)||
         coin.id.toLowerCase().includes(search)
     );
     Table(currentData);
@@ -54,13 +54,13 @@ function handleSearch() {
 
 
 
-function sortByMarketCap() {
+function MarketCap() {
     currentData = [...currentData].sort((a, b) => b.market_cap - a.market_cap);
     Table(currentData);
 }
 
 
-function sortByPercentageChange() {
+function Percentage() {
     currentData = [...currentData].sort((a, b) => 
         b.price_change_percentage_24h - a.price_change_percentage_24h
     );
